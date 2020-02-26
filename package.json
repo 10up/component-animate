@@ -1,0 +1,45 @@
+{
+  "name": "@10up/tenup-scaffold",
+  "version": "1.0.0",
+  "author": "10up",
+  "description": "Component scaffold to use as a template for building new components.",
+  "main": "./src/tenup-scaffold.js",
+  "style": "./dist/tenup-scaffold.css",
+  "scripts": {
+    "start": "npm install && npm run build",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/10up/tenup-scaffold.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/10up/tenup-scaffold/issues"
+  },
+  "homepage": "https://github.com/10up/tenup-scaffold#readme",
+  "devDependencies": {
+    "@10up/eslint-config": "^1.0.6",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^8.0.2",
+    "browser-sync": "^2.24.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.5.0",
+    "eslint-loader": "^2.1.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "postcss": "^7.0.2",
+    "postcss-import": "^12.0.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^5.3.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0"
+  }
+}
