@@ -1,13 +1,16 @@
 'use strict';
 
 const path = require( 'path' );
-const BrowserSyncPlugin = require( 'browser-sync-webpack-plugin' );
-const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
+const TerserJSPlugin = require('terser-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const StyleLintPlugin = require( 'stylelint-webpack-plugin' );
 
-const componentName = 'tenup-scaffold';
+const isProduction = 'production' === process.env.NODE_ENV;
+const componentName = 'animations';
 
 module.exports = {
-	mode: process.env.NODE_ENV ? 'development' : 'production',
+	mode: process.env.NODE_ENV,
 	entry: [
 		'./src/index.js',
 		'./src/style.css'
@@ -20,18 +23,30 @@ module.exports = {
 		rules: [
 			{
 				test: /\.js$/,
-				exclude: /(node_modules)/,
 				enforce: 'pre',
-				use: {
-					loader: 'eslint-loader'
+				loader: 'eslint-loader',
+				options: {
+					fix: true
 				}
 			},
 			{
 				test: /\.js$/,
-				exclude: /(node_modules)/,
-				use: {
-					loader: 'babel-loader'
-				}
+				exclude: /node_modules(?!\/@10up)/,
+				use: [
+					{
+						loader: 'babel-loader',
+						options: {
+							presets: [
+								[ '@babel/preset-env', {
+									'useBuiltIns': 'usage',
+									'corejs': 3,
+								} ]
+							],
+							cacheDirectory: true,
+							sourceMap: ! isProduction,
+						},
+					},
+				],
 			},
 			{
 				test: /\.css$/,
@@ -48,15 +63,18 @@ module.exports = {
 	stats: {
 		colors: true
 	},
+	optimization: {
+		minimizer: [
+			new TerserJSPlugin({}),
+			new OptimizeCSSAssetsPlugin({})
+		],
+	},
 	plugins: [
-		new BrowserSyncPlugin( {
-			host: '0.0.0.0',
-			port: 3000,
-			server: { baseDir: [ __dirname ] },
-			notify: false,
-			files: ['index.html', 'dist/**/*'],
-			stream: { once: true },
-			injectChanges: true
+		// Lint CSS
+		new StyleLintPlugin( {
+			context: path.resolve( process.cwd(), './src/' ),
+			files: '**/*.css',
+			fix: true,
 		} ),
 		new MiniCssExtractPlugin( {
 			filename: `${ componentName }.css`,

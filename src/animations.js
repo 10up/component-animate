@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * @module @10up/TenUpScaffold
+ * @module @10up/TenUpAnimations
  *
  * @description
  *
@@ -9,10 +9,13 @@
  *
  * [Link to demo]{@link https://10up.github.io/wp-component-library/}
  */
-export default class TenUpScaffold {
+export default class TenUpAnimations {
 
+	/**
+	 * Basic init constructor function
+	 */
 	constructor() {
-		console.log( 'This component is working.' );
+
 	}
 
 }

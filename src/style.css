@@ -1,5 +1,21 @@
-@import 'assets/core.css';
+/* Fade In */
+@import "animations/fade-in/fade-in.css";
 
-.tenup-scaffold {
+/* Fade Out */
+@import "animations/fade-out/fade-out.css";
 
-}
+/* Shake */
+@import "animations/shake/shake-horizontal.css";
+@import "animations/shake/shake-vertical.css";
+
+/* Slide In */
+@import "animations/slide-in/slide-in-down.css";
+@import "animations/slide-in/slide-in-left.css";
+@import "animations/slide-in/slide-in-right.css";
+@import "animations/slide-in/slide-in-up.css";
+
+/* Slide Out */
+@import "animations/slide-out/slide-out-down.css";
+@import "animations/slide-out/slide-out-left.css";
+@import "animations/slide-out/slide-out-right.css";
+@import "animations/slide-out/slide-out-up.css";
