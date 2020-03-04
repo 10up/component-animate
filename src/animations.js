@@ -7,7 +7,6 @@
  *
  * A description goes here.
  *
- * [Link to demo]{@link https://10up.github.io/wp-component-library/}
  */
 export default class TenUpAnimations {
 
