@@ -1,0 +1,4 @@
+.animate-duration--3500 {
+	animation-duration: 3500s;
+	animation-fill-mode: both;
+}

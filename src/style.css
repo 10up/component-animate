@@ -6,7 +6,11 @@
 
 /* Shake */
 @import "animations/shake/shake-horizontal.css";
+@import "animations/shake/shake-horizontal-large.css";
+@import "animations/shake/shake-horizontal-small.css";
 @import "animations/shake/shake-vertical.css";
+@import "animations/shake/shake-vertical-large.css";
+@import "animations/shake/shake-vertical-small.css";
 
 /* Slide In */
 @import "animations/slide-in/slide-in-down.css";
@@ -19,3 +23,13 @@
 @import "animations/slide-out/slide-out-left.css";
 @import "animations/slide-out/slide-out-right.css";
 @import "animations/slide-out/slide-out-up.css";
+
+/* Durations */
+@import "durations/duration-500.css";
+@import "durations/duration-750.css";
+@import "durations/duration-1000.css";
+@import "durations/duration-1500.css";
+@import "durations/duration-2000.css";
+@import "durations/duration-2500.css";
+@import "durations/duration-3000.css";
+@import "durations/duration-3500.css";

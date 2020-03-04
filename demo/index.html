@@ -5,12 +5,99 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="../dist/animations.css" rel="stylesheet">
+		<style>
+			*,
+			*:before,
+			*:after {
+				padding: 0;
+				margin: 0;
+			}
+
+			body {
+				font-family: sans-serif;
+			}
+
+			.demo-container {
+				margin: 1em auto;
+				max-width: 500px;
+				padding: 0 1em;
+			}
+
+			.demo-controls {
+				padding: 1em 0;
+			}
+
+			.demo-controls label {
+				display: block;
+			}
+
+			.demo-controls select {
+				display: block;
+			}
+
+			.demo-block {
+				background: #212121;
+				color: #eee;
+				line-height: 100px;
+				text-align: center;
+				width: 200px;
+			}
+		</style>
 	</head>
 	<body>
 
-		<script src="../dist/animations.js"></script>
+		<div class="demo-container">
+			<div class="demo-controls">
+				<label for="js-control">Animation Options</label>
+				<select id="js-control" aria-controls="js-demo-block">
+					<option selected disabled value="">Choose an animation</option>
+					<optgroup label="Fade In/Out">
+						<option value="fade-in">Fade In</option>
+						<option value="fade-out">Fade Out</option>
+					</optgroup>
+					<optgroup label="Shake">
+						<option value="shake-horizontal">Shake Horizontal</option>
+						<option value="shake-horizontal-large">Shake Horizontal, Large</option>
+						<option value="shake-horizontal-small">Shake Horizontal, Small</option>
+						<option value="shake-vertical">Shake Vertical</option>
+						<option value="shake-vertical-large">Shake Vertical, Large</option>
+						<option value="shake-vertical-small">Shake Vertical, Small</option>
+					</optgroup>
+					<optgroup label="Slide In">
+						<option value="slide-in-down">Slide In, Down</option>
+						<option value="slide-in-left">Slide In, Left</option>
+						<option value="slide-in-right">Slide In, Right</option>
+						<option value="slide-in-up">Slide In, Up</option>
+					</optgroup>
+					<optgroup label="Slide Out">
+						<option value="slide-out-down">Slide Out, Down</option>
+						<option value="slide-out-left">Slide Out, Left</option>
+						<option value="slide-out-right">Slide Out, Right</option>
+						<option value="slide-out-up">Slide Out, Up</option>
+					</optgroup>
+				</select>
+			</div>
+
+			<div id="js-demo-block" class="demo-block animate-duration--750">
+				Animation Me!
+			</div>
+		</div>
+
 		<script>
-			let TenUpAnimations = new TenUp.TenUpAnimations();
+			var selectMenu = document.getElementById( 'js-control' );
+			var demoBlock = document.getElementById( 'js-demo-block' );
+			var value, timer;
+
+			selectMenu.addEventListener( 'change', function() {
+
+				value = this.value;
+				demoBlock.classList.add(value);
+				timer = setTimeout( function() {
+					demoBlock.classList.remove(value);
+				}, 1500 );
+
+			}, false );
+
 		</script>
 	</body>
 </html>

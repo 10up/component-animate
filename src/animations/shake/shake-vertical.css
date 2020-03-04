@@ -5,22 +5,19 @@
 		transform: translate3d(0, 0, 0);
 	}
 
-	10%,
-	30%,
-	50%,
-	70%,
-	90% {
+	15%,
+	45%,
+	75% {
 		transform: translate3d(0, -10px, 0);
 	}
 
-	20%,
-	40%,
+	30%,
 	60%,
-	80% {
+	90% {
 		transform: translate3d(0, 10px, 0);
 	}
 }
 
 .shake-vertical {
-	animation-name: shake;
+	animation-name: shakeVertical;
 }
