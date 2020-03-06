@@ -12,7 +12,7 @@ elements of motion into a UI.
 
 #### CSS Imports
 
-`@import '@10up/component-name';`
+`@import '@10up/animate';`
 
 The standard import from the NPM package will bring in all the animations. If
 you want to choose the animations to bring in you can do so manually by
