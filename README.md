@@ -6,12 +6,7 @@ elements of motion into a UI.
 
 ## Installation
 
-### NPM
- `npm install --save @10up/animate`
-
-## API
-
- This component accepts two arguments, the selector for the component container and an object containing optional callbacks.
+`npm install --save @10up/animate`
 
 ## Usage
 
@@ -28,6 +23,7 @@ referencing the CSS files directly.
 This is a full list of classes currently available.
 
 #### Fade
+
 | Name |  Description |
 |--|--|
 | .fade-in | Update opacity from 0 to 1 |
