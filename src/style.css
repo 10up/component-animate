@@ -1,8 +1,8 @@
 /* Fade In */
-@import "animations/fade-in/fade-in.css";
+@import "animations/fade/fade-in.css";
 
 /* Fade Out */
-@import "animations/fade-out/fade-out.css";
+@import "animations/fade/fade-out.css";
 
 /* Shake */
 @import "animations/shake/shake-horizontal.css";
@@ -12,17 +12,23 @@
 @import "animations/shake/shake-vertical-large.css";
 @import "animations/shake/shake-vertical-small.css";
 
-/* Slide In */
-@import "animations/slide-in/slide-in-down.css";
-@import "animations/slide-in/slide-in-left.css";
-@import "animations/slide-in/slide-in-right.css";
-@import "animations/slide-in/slide-in-up.css";
+/* Scale */
+@import "animations/scale/scale-down.css";
+@import "animations/scale/scale-down-large.css";
+@import "animations/scale/scale-down-small.css";
+@import "animations/scale/scale-up.css";
+@import "animations/scale/scale-up-large.css";
+@import "animations/scale/scale-up-small.css";
 
-/* Slide Out */
-@import "animations/slide-out/slide-out-down.css";
-@import "animations/slide-out/slide-out-left.css";
-@import "animations/slide-out/slide-out-right.css";
-@import "animations/slide-out/slide-out-up.css";
+/* Slide */
+@import "animations/slide/slide-in-down.css";
+@import "animations/slide/slide-in-left.css";
+@import "animations/slide/slide-in-right.css";
+@import "animations/slide/slide-in-up.css";
+@import "animations/slide/slide-out-down.css";
+@import "animations/slide/slide-out-left.css";
+@import "animations/slide/slide-out-right.css";
+@import "animations/slide/slide-out-up.css";
 
 /* Durations */
 @import "durations/duration-500.css";

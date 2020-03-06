@@ -1,6 +1,6 @@
-// Component Scaffold
+// Animate
 
-import TenUpAnimations from './animations';
+import TenUpAnimations from './animate';
 
 if ( 'object' !== typeof window.TenUp ) {
 	window.TenUp = {};

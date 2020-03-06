@@ -7,7 +7,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const StyleLintPlugin = require( 'stylelint-webpack-plugin' );
 
 const isProduction = 'production' === process.env.NODE_ENV;
-const componentName = 'animations';
+const componentName = 'animate';
 
 module.exports = {
 	mode: process.env.NODE_ENV,

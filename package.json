@@ -1,8 +1,8 @@
 {
-  "name": "@10up/animations",
+  "name": "@10up/animate",
   "version": "0.0.1",
   "author": "10up",
-  "description": "Component scaffold to use as a template for building new components.",
+  "description": "A lightweight utility animation library from 10up",
   "main": "./dist/animations.js",
   "style": "./dist/animations.css",
   "scripts": {
@@ -12,13 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/10up/component-animations.git"
+    "url": "git+https://github.com/10up/component-animate.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/10up/component-animations/issues"
+    "url": "https://github.com/10up/component-animate/issues"
   },
-  "homepage": "https://github.com/10up/component-animations#readme",
+  "homepage": "https://github.com/10up/component-animate#readme",
   "devDependencies": {
     "@10up/eslint-config": "^1.0.9",
     "@10up/stylelint-config": "^1.0.9",
