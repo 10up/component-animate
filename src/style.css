@@ -4,6 +4,12 @@
 /* Fade Out */
 @import "animation/fade/fade-out.css";
 
+/* Rotate */
+@import "animation/rotate/rotate-90.css";
+@import "animation/rotate/rotate-180.css";
+@import "animation/rotate/rotate-270.css";
+@import "animation/rotate/rotate-360.css";
+
 /* Shake */
 @import "animation/shake/shake-horizontal.css";
 @import "animation/shake/shake-horizontal-large.css";
