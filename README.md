@@ -31,6 +31,15 @@ This is a full list of classes currently available.
 | .fade-in | Update opacity from 0 to 1 |
 | .fade-out | Update opacity from 1 to 0 |
 
+#### Rotate
+
+| Name |  Description |
+|--|--|
+| .rotate-90 | Rotate to 90 degrees |
+| .rotate-180 | Rotate to 180 degrees |
+| .rotate-270 | Rotate to 270 degrees |
+| .rotate-360 | Rotate to 360 degrees |
+
 #### Scale
 | Name |  Description |
 |--|--|
