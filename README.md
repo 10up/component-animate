@@ -61,6 +61,18 @@ This is a full list of classes currently available.
 | .slide-out-right | Move object from 0% to right 100% |
 | .slide-out-up | Move object from 0% to up 100% |
 
+#### Delay
+| Name |  Description |
+|--|--|
+| .delay-500 | Set animation delay to 500ms |
+| .delay-750 | Set animation delay to 750ms |
+| .delay-1000 | Set animation delay to 1000ms |
+| .delay-1500 | Set animation delay to 1500ms |
+| .delay-2000 | Set animation delay to 2000ms |
+| .delay-2500 | Set animation delay to 2500ms |
+| .delay-3000 | Set animation delay to 3000ms |
+| .delay-3500 | Set animation delay to 3500ms |
+
 #### Duration
 | Name |  Description |
 |--|--|
@@ -72,6 +84,15 @@ This is a full list of classes currently available.
 | .duration-2500 | Set duration to 2500ms |
 | .duration-3000 | Set duration to 3000ms |
 | .duration-3500 | Set duration to 3500ms |
+
+#### Timing
+| Name |  Description |
+|--|--|
+| .timing-ease-in-out | Set animation cycle progress to ease-in-out |
+| .timing-ease-in-out | Set animation cycle progress to ease-in |
+| .timing-ease-in-out | Set animation cycle progress to ease-out |
+| .timing-ease-in-out | Set animation cycle progress to ease |
+| .timing-linear | Set animation cycle progress to linear (default) |
 
 ### CSS
 

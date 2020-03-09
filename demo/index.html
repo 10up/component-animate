@@ -1,108 +1,169 @@
 <!doctype html>
-<html>
+<html lang="en-US">
 	<head>
 		<title>10up Component Library | TenUpAnimations</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+		<link href="/demo/demo.css" rel="stylesheet">
 		<link href="../dist/animate.css" rel="stylesheet">
-		<style>
-			*,
-			*:before,
-			*:after {
-				padding: 0;
-				margin: 0;
-			}
 
-			body {
-				font-family: sans-serif;
-			}
-
-			.demo-container {
-				margin: 1em auto;
-				max-width: 500px;
-				padding: 0 1em;
-			}
-
-			.demo-controls {
-				padding: 1em 0;
-			}
-
-			.demo-controls label {
-				display: block;
-			}
-
-			.demo-controls select {
-				display: block;
-			}
-
-			.demo-block {
-				background: #212121;
-				color: #eee;
-				line-height: 100px;
-				text-align: center;
-				width: 200px;
-			}
 		</style>
 	</head>
 	<body>
 
 		<div class="demo-container">
-			<div class="demo-controls">
-				<label for="js-control">Animation Options</label>
-				<select id="js-control" aria-controls="js-demo-block">
-					<option selected disabled value="">Choose an animation</option>
-					<optgroup label="Fade">
-						<option value="fade-in">Fade In</option>
-						<option value="fade-out">Fade Out</option>
-					</optgroup>
-					<optgroup label="Scale">
-						<option value="scale-down">Scale Down</option>
-						<option value="scale-down-small">Scale Down, Small</option>
-						<option value="scale-down-large">Scale Down, Large</option>
-						<option value="scale-up">Scale Up</option>
-						<option value="scale-up-small">Scale Up, Small</option>
-						<option value="scale-up-large">Scale Up, Large</option>
-					</optgroup>
-					<optgroup label="Shake">
-						<option value="shake-horizontal">Shake Horizontal</option>
-						<option value="shake-horizontal-large">Shake Horizontal, Large</option>
-						<option value="shake-horizontal-small">Shake Horizontal, Small</option>
-						<option value="shake-vertical">Shake Vertical</option>
-						<option value="shake-vertical-large">Shake Vertical, Large</option>
-						<option value="shake-vertical-small">Shake Vertical, Small</option>
-					</optgroup>
-					<optgroup label="Slide">
-						<option value="slide-in-down">Slide In, Down</option>
-						<option value="slide-in-left">Slide In, Left</option>
-						<option value="slide-in-right">Slide In, Right</option>
-						<option value="slide-in-up">Slide In, Up</option>
-						<option value="slide-out-down">Slide Out, Down</option>
-						<option value="slide-out-left">Slide Out, Left</option>
-						<option value="slide-out-right">Slide Out, Right</option>
-						<option value="slide-out-up">Slide Out, Up</option>
-					</optgroup>
-				</select>
-			</div>
 
-			<div id="js-demo-block" class="demo-block duration--750">
-				Animation Me!
-			</div>
+			<form method="get" action="" id="js-animation-form">
+				<fieldset>
+					<legend>
+						Animation Library Options
+					</legend>
+					<div class="demo-controls">
+						<div class="col">
+							<div class="gutter">
+								<label for="js-control">Style</label>
+								<div class="custom-select">
+									<select id="js-control" aria-controls="js-demo-block">
+										<optgroup label="Fade">
+											<option  selected value="fade-in">Fade In</option>
+											<option value="fade-out">Fade Out</option>
+										</optgroup>
+										<optgroup label="Scale">
+											<option value="scale-down">Scale Down</option>
+											<option value="scale-down-small">Scale Down, Small</option>
+											<option value="scale-down-large">Scale Down, Large</option>
+											<option value="scale-up">Scale Up</option>
+											<option value="scale-up-small">Scale Up, Small</option>
+											<option value="scale-up-large">Scale Up, Large</option>
+										</optgroup>
+										<optgroup label="Shake">
+											<option value="shake-horizontal">Shake Horizontal</option>
+											<option value="shake-horizontal-large">Shake Horizontal, Large</option>
+											<option value="shake-horizontal-small">Shake Horizontal, Small</option>
+											<option value="shake-vertical">Shake Vertical</option>
+											<option value="shake-vertical-large">Shake Vertical, Large</option>
+											<option value="shake-vertical-small">Shake Vertical, Small</option>
+										</optgroup>
+										<optgroup label="Slide">
+											<option value="slide-in-down">Slide In, Down</option>
+											<option value="slide-in-left">Slide In, Left</option>
+											<option value="slide-in-right">Slide In, Right</option>
+											<option value="slide-in-up">Slide In, Up</option>
+											<option value="slide-out-down">Slide Out, Down</option>
+											<option value="slide-out-left">Slide Out, Left</option>
+											<option value="slide-out-right">Slide Out, Right</option>
+											<option value="slide-out-up">Slide Out, Up</option>
+										</optgroup>
+									</select>
+								</div><!--/.custom-select-->
+
+								<label for="js-speed">Duration</label>
+								<div class="custom-select">
+									<select id="js-speed" aria-controls="js-demo-block">
+										<option>
+											<option value="duration-500">500ms</option>
+											<option selected value="duration-750">750ms</option>
+											<option value="duration-1000">1000ms</option>
+											<option value="duration-1500">1500ms</option>
+											<option value="duration-2000">2000ms</option>
+											<option value="duration-2500">2500ms</option>
+											<option value="duration-3000">3000ms</option>
+											<option value="duration-3500">3500ms</option>
+										</option>
+									</select>
+								</div><!--/.custom-select-->
+							</div>
+						</div><!--/.col-->
+						<div class="col">
+							<div class="gutter">
+							<label for="js-timing">Timing</label>
+							<div class="custom-select">
+								<select id="js-timing" aria-controls="js-demo-block">
+									<option>
+										<option value="timing-ease-in-out">Ease In Out</option>
+										<option value="timing-ease-in">Ease In</option>
+										<option value="timing-ease-out">Ease Out</option>
+										<option value="timing-ease">Ease</option>
+										<option selected value="timing-linear">Linear</option>
+									</option>
+								</select>
+							</div><!--/.custom-select-->
+
+							<label for="js-delay">Delay</label>
+							<div class="custom-select">
+								<select id="js-delay" aria-controls="js-demo-block">
+									<option>
+										<option selected value="">No delay</option>
+										<option value="delay-500">500ms</option>
+										<option value="delay-750">750ms</option>
+										<option value="delay-1000">1000ms</option>
+										<option value="delay-1500">1500ms</option>
+										<option value="delay-2000">2000ms</option>
+										<option value="delay-2500">2500ms</option>
+										<option value="delay-3000">3000ms</option>
+										<option value="delay-3500">3500ms</option>
+									</option>
+								</select>
+							</div><!--/.custom-select-->
+							</div>
+						</div><!--/.col-->
+					</div><!--/.demo-controls-->
+					<div class="gutter">
+						<button class="button" type="submit">Apply this animation</button>
+					</div>
+				</fieldset>
+			</form>
+
+			<div class="demo-wrap">
+				<div id="js-demo-block" class="demo-block duration-750">
+					Animate Me!
+				</div>
+			</div><!--/.demo-wrap-->
+
 		</div>
 
 		<script>
-			var selectMenu = document.getElementById( 'js-control' );
-			var demoBlock = document.getElementById( 'js-demo-block' );
-			var value, timer;
 
-			selectMenu.addEventListener( 'change', function() {
+			var form = document.getElementById( 'js-animation-form' );
+			var target = document.getElementById( 'js-demo-block' );
+			var formElements,
+				formElementsCount,
+				delayValue,
+				delayValueForTimer,
+				value,
+				timer,
+				i;
 
-				value = this.value;
-				demoBlock.classList.add(value);
+			form.addEventListener('submit', function( e ) {
+
+				e.preventDefault();
+				formElements = e.target.elements;
+				formElementsCount = formElements.length;
+				delayValue = (document.getElementById('js-delay').value === '') ? 1000 : document.getElementById('js-delay').value;
+				delayValueForTimer = Number( delayValue.toString().replace(/delay-/i, '') );
+
+				if ( formElementsCount > 0 ) {
+
+					clearTimeout(timer);
+					target.setAttribute('class', 'demo-block');
+
+					for (i = 0; i < formElementsCount; i = i + 1) {
+
+						value = formElements[i].value;
+
+						if ( value !== '' ) {
+							target.classList.add(value);
+						}
+					}
+				}
+
 				timer = setTimeout( function() {
-					demoBlock.classList.remove(value);
-				}, 1500 );
+					target.setAttribute('class', 'demo-block');
+				}, delayValueForTimer + 1000 );
 
-			}, false );
+			}, false);
 
 		</script>
 	</body>

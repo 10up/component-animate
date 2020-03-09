@@ -1,41 +1,58 @@
 /* Fade In */
-@import "animations/fade/fade-in.css";
+@import "animation/fade/fade-in.css";
 
 /* Fade Out */
-@import "animations/fade/fade-out.css";
+@import "animation/fade/fade-out.css";
 
 /* Shake */
-@import "animations/shake/shake-horizontal.css";
-@import "animations/shake/shake-horizontal-large.css";
-@import "animations/shake/shake-horizontal-small.css";
-@import "animations/shake/shake-vertical.css";
-@import "animations/shake/shake-vertical-large.css";
-@import "animations/shake/shake-vertical-small.css";
+@import "animation/shake/shake-horizontal.css";
+@import "animation/shake/shake-horizontal-large.css";
+@import "animation/shake/shake-horizontal-small.css";
+@import "animation/shake/shake-vertical.css";
+@import "animation/shake/shake-vertical-large.css";
+@import "animation/shake/shake-vertical-small.css";
 
 /* Scale */
-@import "animations/scale/scale-down.css";
-@import "animations/scale/scale-down-large.css";
-@import "animations/scale/scale-down-small.css";
-@import "animations/scale/scale-up.css";
-@import "animations/scale/scale-up-large.css";
-@import "animations/scale/scale-up-small.css";
+@import "animation/scale/scale-down.css";
+@import "animation/scale/scale-down-large.css";
+@import "animation/scale/scale-down-small.css";
+@import "animation/scale/scale-up.css";
+@import "animation/scale/scale-up-large.css";
+@import "animation/scale/scale-up-small.css";
 
 /* Slide */
-@import "animations/slide/slide-in-down.css";
-@import "animations/slide/slide-in-left.css";
-@import "animations/slide/slide-in-right.css";
-@import "animations/slide/slide-in-up.css";
-@import "animations/slide/slide-out-down.css";
-@import "animations/slide/slide-out-left.css";
-@import "animations/slide/slide-out-right.css";
-@import "animations/slide/slide-out-up.css";
+@import "animation/slide/slide-in-down.css";
+@import "animation/slide/slide-in-left.css";
+@import "animation/slide/slide-in-right.css";
+@import "animation/slide/slide-in-up.css";
+@import "animation/slide/slide-out-down.css";
+@import "animation/slide/slide-out-left.css";
+@import "animation/slide/slide-out-right.css";
+@import "animation/slide/slide-out-up.css";
+
+/* Delays */
+@import "delay/delay-500.css";
+@import "delay/delay-750.css";
+@import "delay/delay-1000.css";
+@import "delay/delay-1500.css";
+@import "delay/delay-2000.css";
+@import "delay/delay-2500.css";
+@import "delay/delay-3000.css";
+@import "delay/delay-3500.css";
 
 /* Durations */
-@import "durations/duration-500.css";
-@import "durations/duration-750.css";
-@import "durations/duration-1000.css";
-@import "durations/duration-1500.css";
-@import "durations/duration-2000.css";
-@import "durations/duration-2500.css";
-@import "durations/duration-3000.css";
-@import "durations/duration-3500.css";
+@import "duration/duration-500.css";
+@import "duration/duration-750.css";
+@import "duration/duration-1000.css";
+@import "duration/duration-1500.css";
+@import "duration/duration-2000.css";
+@import "duration/duration-2500.css";
+@import "duration/duration-3000.css";
+@import "duration/duration-3500.css";
+
+/* Timing */
+@import "timing/timing-ease-in-out.css";
+@import "timing/timing-ease-in.css";
+@import "timing/timing-ease-out.css";
+@import "timing/timing-ease.css";
+@import "timing/timing-linear.css";
