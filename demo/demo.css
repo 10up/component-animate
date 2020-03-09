@@ -24,6 +24,7 @@ legend {
 	display: block;
 	font-size: 22px;
 	font-weight: 600;
+	margin-bottom: 8px;
 	padding-left: 8px;
 	width: 100%;
 }
@@ -132,12 +133,12 @@ fieldset {
 .demo-wrap {
 	border: 2px dashed #767676;
 	margin: 1em auto;
+	max-width: 300px;
 	padding: 1em;
-	width: 300px;
 }
 
 .demo-controls {
-	padding: 1em 0;
+	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
 }
