@@ -47,14 +47,24 @@
 @import "delay/delay-3500.css";
 
 /* Durations */
+@import "duration/duration-150.css";
+@import "duration/duration-200.css";
+@import "duration/duration-250.css";
+@import "duration/duration-300.css";
+@import "duration/duration-350.css";
+@import "duration/duration-400.css";
+@import "duration/duration-450.css";
 @import "duration/duration-500.css";
+@import "duration/duration-550.css";
+@import "duration/duration-600.css";
+@import "duration/duration-650.css";
+@import "duration/duration-700.css";
 @import "duration/duration-750.css";
+@import "duration/duration-800.css";
+@import "duration/duration-850.css";
+@import "duration/duration-900.css";
+@import "duration/duration-950.css";
 @import "duration/duration-1000.css";
-@import "duration/duration-1500.css";
-@import "duration/duration-2000.css";
-@import "duration/duration-2500.css";
-@import "duration/duration-3000.css";
-@import "duration/duration-3500.css";
 
 /* Timing */
 @import "timing/timing-ease-in-out.css";

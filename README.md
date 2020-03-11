@@ -87,14 +87,24 @@ This is a full list of classes currently available.
 #### Duration
 | Name |  Description |
 |--|--|
+| .duration-150 | Set duration to 150ms |
+| .duration-200 | Set duration to 200ms |
+| .duration-250 | Set duration to 250ms |
+| .duration-300 | Set duration to 300ms |
+| .duration-350 | Set duration to 350ms |
+| .duration-400 | Set duration to 400ms |
+| .duration-450 | Set duration to 400ms |
 | .duration-500 | Set duration to 500ms |
+| .duration-550 | Set duration to 550ms |
+| .duration-600 | Set duration to 600ms |
+| .duration-650 | Set duration to 650ms |
+| .duration-700 | Set duration to 700ms |
 | .duration-750 | Set duration to 750ms |
+| .duration-800 | Set duration to 800ms |
+| .duration-850 | Set duration to 850ms |
+| .duration-900 | Set duration to 900ms |
+| .duration-950 | Set duration to 950ms |
 | .duration-1000 | Set duration to 1000ms |
-| .duration-1500 | Set duration to 1500ms |
-| .duration-2000 | Set duration to 2000ms |
-| .duration-2500 | Set duration to 2500ms |
-| .duration-3000 | Set duration to 3000ms |
-| .duration-3500 | Set duration to 3500ms |
 
 #### Timing
 | Name |  Description |
