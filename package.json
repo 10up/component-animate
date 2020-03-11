@@ -1,6 +1,6 @@
 {
   "name": "@10up/animate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "10up",
   "description": "A lightweight utility animation library from 10up",
   "main": "./dist/animations.js",
