@@ -8,7 +8,7 @@ elements of motion into a UI.
 
 ## Installation
 
-`npm install --save @10up/animate`
+`npm install @10up/animate --save`
 
 ## Usage
 
@@ -121,4 +121,4 @@ This is a full list of classes currently available.
 
 ## Demo
 
-Example implementations can be found in the `demo` directory.
+Example implementations at: https://10up.github.io/component-animate/demo/
