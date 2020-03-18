@@ -1,6 +1,6 @@
 {
   "name": "@10up/animate",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "10up",
   "description": "A lightweight utility animation library from 10up",
   "main": "./dist/animations.js",
@@ -8,6 +8,7 @@
   "scripts": {
     "start": "npm install && npm audit fix && npm update && npm run build",
     "build": "NODE_ENV=production webpack",
+    "test": "jest",
     "watch": "NODE_ENV=development webpack --watch"
   },
   "repository": {
@@ -18,26 +19,28 @@
   "bugs": {
     "url": "https://github.com/10up/component-animate/issues"
   },
-  "homepage": "https://github.com/10up/component-animate#readme",
+  "homepage": "https://baseline.10up.com/component/animate/",
   "devDependencies": {
     "@10up/eslint-config": "^1.0.9",
     "@10up/stylelint-config": "^1.0.9",
     "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.6",
-    "@babel/polyfill": "^7.8.3",
-    "@babel/preset-env": "^7.8.6",
+    "@babel/core": "^7.8.7",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
     "babel-eslint": "^9.0.0",
     "babel-loader": "^8.0.6",
     "core-js": "^3.6.4",
     "css-loader": "^1.0.0",
     "eslint": "^5.16.0",
     "eslint-loader": "^2.2.1",
+    "jest": "^25.1.0",
     "mini-css-extract-plugin": "^0.4.5",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss": "^7.0.27",
     "postcss-import": "^12.0.0",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^5.3.0",
+    "puppeteer": "^2.1.1",
     "stylelint": "^9.10.1",
     "stylelint-config-wordpress": "^14.0.0",
     "stylelint-declaration-use-variable": "^1.7.2",
@@ -45,5 +48,12 @@
     "stylelint-webpack-plugin": "^1.1.2",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11"
-  }
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead",
+    "IE 11"
+  ]
 }
