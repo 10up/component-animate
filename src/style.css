@@ -1,50 +1,29 @@
-/* Fade In */
-@import "animation/fade/fade-in.css";
-
-/* Fade Out */
-@import "animation/fade/fade-out.css";
-
-/* Rotate */
-@import "animation/rotate/rotate-90.css";
-@import "animation/rotate/rotate-180.css";
-@import "animation/rotate/rotate-270.css";
-@import "animation/rotate/rotate-360.css";
-
-/* Shake */
-@import "animation/shake/shake-horizontal.css";
-@import "animation/shake/shake-horizontal-large.css";
-@import "animation/shake/shake-horizontal-small.css";
-@import "animation/shake/shake-vertical.css";
-@import "animation/shake/shake-vertical-large.css";
-@import "animation/shake/shake-vertical-small.css";
-
-/* Scale */
-@import "animation/scale/scale-down.css";
-@import "animation/scale/scale-down-large.css";
-@import "animation/scale/scale-down-small.css";
-@import "animation/scale/scale-up.css";
-@import "animation/scale/scale-up-large.css";
-@import "animation/scale/scale-up-small.css";
-
-/* Slide */
-@import "animation/slide/slide-in-down.css";
-@import "animation/slide/slide-in-left.css";
-@import "animation/slide/slide-in-right.css";
-@import "animation/slide/slide-in-up.css";
-@import "animation/slide/slide-out-down.css";
-@import "animation/slide/slide-out-left.css";
-@import "animation/slide/slide-out-right.css";
-@import "animation/slide/slide-out-up.css";
+/* Animations */
+@import "animation/fade/fade.css";
+@import "animation/rotate/rotate.css";
+@import "animation/scale/scale.css";
+@import "animation/shake/shake.css";
+@import "animation/slide/slide.css";
 
 /* Delays */
+@import "delay/delay-150.css";
+@import "delay/delay-200.css";
+@import "delay/delay-250.css";
+@import "delay/delay-300.css";
+@import "delay/delay-350.css";
+@import "delay/delay-400.css";
+@import "delay/delay-450.css";
 @import "delay/delay-500.css";
+@import "delay/delay-550.css";
+@import "delay/delay-600.css";
+@import "delay/delay-650.css";
+@import "delay/delay-700.css";
 @import "delay/delay-750.css";
+@import "delay/delay-800.css";
+@import "delay/delay-850.css";
+@import "delay/delay-900.css";
+@import "delay/delay-950.css";
 @import "delay/delay-1000.css";
-@import "delay/delay-1500.css";
-@import "delay/delay-2000.css";
-@import "delay/delay-2500.css";
-@import "delay/delay-3000.css";
-@import "delay/delay-3500.css";
 
 /* Durations */
 @import "duration/duration-150.css";
