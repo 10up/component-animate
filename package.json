@@ -1,12 +1,12 @@
 {
   "name": "@10up/animate",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "10up",
   "description": "A lightweight utility animation library from 10up",
   "main": "./dist/animate.js",
   "style": "./dist/animate.css",
   "scripts": {
-    "start": "npm install && npm audit fix && npm update && npm run build",
+    "start": "npm install && npm update && npm audit fix && npm run build",
     "build": "NODE_ENV=production webpack",
     "test": "jest",
     "watch": "NODE_ENV=development webpack --watch"
