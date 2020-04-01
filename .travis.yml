@@ -6,6 +6,6 @@ cache:
     - node_modules
 script:
   - npm run build
-  - npm run test
+  - npm test
 on:
   branch: master
