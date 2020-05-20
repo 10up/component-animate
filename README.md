@@ -9,6 +9,8 @@ elements of motion into a UI.
 [cli-img]: https://github.com/10up/component-animate/workflows/Accessibility%20Tests/badge.svg
 [cli-url]: https://github.com/10up/component-animate/actions?query=workflow%3A%22Accessibility+Tests%22
 
+[View official documentation for this package](https://baseline.10up.com/component/animate)
+
 ## Installation
 
 `npm install @10up/animate --save`
@@ -22,8 +24,6 @@ elements of motion into a UI.
 The standard import from the NPM package will bring in all the animations. If
 you want to choose the animations to bring in you can do so manually by
 referencing the CSS files directly.
-
-[View official documentation for this package](https://baseline.10up.com/component/animate)
 
 ### CSS
 
