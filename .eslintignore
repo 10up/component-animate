@@ -2,3 +2,4 @@ babel.config.js
 postcss.config.js
 webpack.config.js
 tests/*.spec.js
+examples
