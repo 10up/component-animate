@@ -4,6 +4,7 @@ img {
 }
 
 p, ul, ol, dl {
+	margin-right: 0;
 	max-width: 100%;
 }
 
