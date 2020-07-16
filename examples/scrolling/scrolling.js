@@ -20,7 +20,7 @@
 		if (entry[0].intersectionRatio > 0) {
 			exampleImage.classList.add('fade-in');
 			exampleImage.classList.add('duration-1000');
-			exampleImage.classList.add('delay-500');
+			exampleImage.classList.add('delay-250');
 		}
 	} );
 
