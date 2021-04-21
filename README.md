@@ -1,5 +1,7 @@
 # 10up Animate
 
+**DEPRECATED.** Please go to https://github.com/10up/component-library
+
 10up Animate is a small utility animation library. It consists of a
 series of CSS classes that can be combined or used in isolation to bring small
 elements of motion into a UI.
